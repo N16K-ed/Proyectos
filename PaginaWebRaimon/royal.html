@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./royal.css">
+    <link rel="icon" href="./imagenes/royal/logo_royal.png" type="image/png">
+
+    <title>Royal Academy</title>
+</head>
+<body>
+    <div class="title"><h1>Royal Academy</h1></div>    
+    <div class="navigationbar">
+        <nav>
+            <ul>
+                <li><a href="./royal.html">Jugadores</a></li>
+                <li><a href="">Alineaciones</a></li>
+                <li>
+                    <select name="equipos" id="equipos">
+                        <option value="1">Raimon</option>                        
+                        <option value="3" selected>Royal Academy</option>
+                        <option value="4">Zeus</option>                        
+                    </select>   
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="logo">  
+            <img src="./imagenes/royal/logo_royal.png" alt="logo">
+    </div>
+    <div class="content">  
+        <div class="container">
+            <h2>Jugadores</h2>
+            
+            <div class="players">
+                <button onclick="showJude()"><img id="Jude" src="./imagenes/royal/_Jude.png" alt="Jude"></button>
+                <button onclick="showSamford()"><img id="Samford" src="./imagenes/royal/_Samford.png" alt="Samford"></button>
+                <button onclick="showKing()"><img id="King" src="./imagenes/royal/_King.png" alt="King"></button>
+                <button onclick="showHatch()"><img id="Hatch" src="./imagenes/royal/_Hatch.png" alt="Hatch"></button>
+                <button onclick="showDrent()"><img id="Drent" src="./imagenes/royal/_Drent.png" alt="Drent"></button>
+                <button onclick="showMartin()"><img id="Martin" src="./imagenes/royal/_Martin.png" alt="Martin"></button>
+                <button onclick="showSwing()"><img id="Swing" src="./imagenes/royal/_Swing.png" alt="Swing"></button>
+                <button onclick="showSimmons()"><img id="Simmons" src="./imagenes/royal/_Simmons.png" alt="Simmons"></button>
+                <button onclick="showWaldon()"><img id="Waldon" src="./imagenes/royal/_Waldon.png" alt="Waldon"></button>
+                <button onclick="showBloom()"><img id="Bloom" src="./imagenes/royal/_Bloom.png" alt="Bloom"></button>
+                <button onclick="showMaster()"><img id="Master" src="./imagenes/royal/_Master.png" alt="Master"></button>
+            </div>        
+        </div>
+        <div id="info">            
+        </div>
+        <div id="descRaimon">
+            <p>Club de futbol de la Royal Academy</p>
+        </div>
+    </div>  
+    <div class="footer">
+        <p>2025</p>
+    </div>
+    <script>
+    // Establecemos la función para cada jugador
+    function showJude() {
+        var infoJugador = "<p>Jude Sharp <img src='./imagenes/iconos/PR_icon.png' alt='IconoPortero'/> <img src='./imagenes/iconos/afinidad_MONTANA.png' alt='afinidadMontana'/></p>";
+        actualizarInfo(infoJugador, "Jude");
+    }
+
+    function showSamford() {
+        var infoJugador = "<p>Samford <img src='./imagenes/iconos/DF_icon.png' alt='IconoDefensa'/> <img src='./imagenes/iconos/afinidad_AIRE.png' alt='afinidadAire'/></p>";
+        actualizarInfo(infoJugador, "Samford");
+    }
+
+    function showKing() {
+        var infoJugador = "<p>King <img src='./imagenes/iconos/DF_icon.png' alt='IconoDefensa'/> <img src='./imagenes/iconos/afinidad_FUEGO.png' alt='afinidadFuego'/></p>";
+        actualizarInfo(infoJugador, "King");
+    }
+
+    function showHatch() {
+        var infoJugador = "<p>Hatch <img src='./imagenes/iconos/MD_icon.png' alt='IconoMediocentro'/> <img src='./imagenes/iconos/afinidad_BOSQUE.png' alt='afinidadBosque'/></p>";
+        actualizarInfo(infoJugador, "Hatch");
+    }
+
+    function showDrent() {
+        var infoJugador = "<p>Drent <img src='./imagenes/iconos/DF_icon.png' alt='IconoDefensa'/> <img src='./imagenes/iconos/afinidad_MONTANA.png' alt='afinidadMontana'/></p>";
+        actualizarInfo(infoJugador, "Drent");
+    }
+
+    function showMartin() {
+        var infoJugador = "<p>Martin <img src='./imagenes/iconos/MD_icon.png' alt='IconoMediocentro'/> <img src='./imagenes/iconos/afinidad_AIRE.png' alt='afinidadAire'/></p>";
+        actualizarInfo(infoJugador, "Martin");
+    }
+
+    function showSwing() {
+        var infoJugador = "<p>Swing <img src='./imagenes/iconos/DL_icon.png' alt='IconoDelantero'/> <img src='./imagenes/iconos/afinidad_FUEGO.png' alt='afinidadFuego'/></p>";
+        actualizarInfo(infoJugador, "Swing");
+    }
+
+    function showSimmons() {
+        var infoJugador = "<p>Simmons <img src='./imagenes/iconos/MD_icon.png' alt='IconoMediocentro'/> <img src='./imagenes/iconos/afinidad_BOSQUE.png' alt='afinidadBosque'/></p>";
+        actualizarInfo(infoJugador, "Simmons");
+    }
+
+    function showWaldon() {
+        var infoJugador = "<p>Waldon <img src='./imagenes/iconos/DF_icon.png' alt='IconoDefensa'/> <img src='./imagenes/iconos/afinidad_MONTANA.png' alt='afinidadMontana'/></p>";
+        actualizarInfo(infoJugador, "Waldon");
+    }
+
+    function showBloom() {
+        var infoJugador = "<p>Bloom <img src='./imagenes/iconos/MD_icon.png' alt='IconoMediocentro'/> <img src='./imagenes/iconos/afinidad_AIRE.png' alt='afinidadAire'/></p>";
+        actualizarInfo(infoJugador, "Bloom");
+    }
+
+    function showMaster() {
+        var infoJugador = "<p>Master <img src='./imagenes/iconos/DL_icon.png' alt='IconoDelantero'/> <img src='./imagenes/iconos/afinidad_FUEGO.png' alt='afinidadFuego'/></p>";
+        actualizarInfo(infoJugador, "Master");
+    }
+
+    // Función común para actualizar la información del jugador y las imágenes
+    function actualizarInfo(infoJugador, jugadorID) {
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show");      
+
+        // Resetear estilos para otros jugadores
+        var jugadores = ["Jude", "Samford", "King", "Hatch", "Drent", "Martin", "Swing", "Simmons", "Waldon", "Bloom", "Master"];
+        jugadores.forEach(function(jugador) {
+            document.getElementById(jugador).style.cssText = "";
+        });
+
+        // Cambiar el estilo del jugador seleccionado
+        document.getElementById(jugadorID).style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;transition: transform 0.3s ease";
+    }
+    let jude = document.getElementById("Jude");
+    let samford = document.getElementById("Samford");
+    let king = document.getElementById("King");
+    let hatch = document.getElementById("Hatch");
+    let drent = document.getElementById("Drent");
+    let martin = document.getElementById("Martin");
+    let swing = document.getElementById("Swing");
+    let simmons = document.getElementById("Simmons");
+    let waldon = document.getElementById("Waldon");
+    let bloom = document.getElementById("Bloom");
+    let master = document.getElementById("Master");
+
+    let royalPlayers = [jude, samford, king, hatch, drent, martin, swing, simmons, waldon, bloom, master];
+
+    for (let i = 0; i < royalPlayers.length; i++) {
+        royalPlayers[i].style.transition = "transform 0.3s ease";
+
+        royalPlayers[i].addEventListener("mouseover", function() {
+            this.style.transform = "scale(1.1)";
+        });
+
+        royalPlayers[i].addEventListener("mouseout", function() {
+            this.style.transform = "scale(1)";
+        });
+    }
+    let select = document.getElementById("equipos");
+    select.addEventListener("change", function() {
+        let selectedValue = select.value;
+        if (selectedValue == "1") {
+            window.location.href = "./index.html";
+        } else if (selectedValue == "3") {
+            window.location.href = "./royal.html";
+        } else if (selectedValue == "4") {
+            window.location.href = ""; //./zeus.html
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'inazuma';
+    src: url(./fonts/ttg_by_westralinc-dbnnkt8.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fd9800;
+    background-image: url("./imagenes/fondo_logo_balnco_definitivo_vacio.png");
+    font-family: inazuma;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    animation: moveBackground 40s linear infinite forwards;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-image: url("./imagenes/fondo_logo_balnco_definitivo\ -\ copia.png");
+        background-position: 0 0;
+    }
+    5% {
+        background-image: url("./imagenes/fondo_logo_balnco_definitivo_vacio.png");
+    }
+    50% {
+        background-position: -600px 600px;
+    }
+    95% {
+        background-image: url("./imagenes/fondo_logo_balnco_definitivo_vacio.png");
+    }
+    100% {
+        background-position: -1200px -0px;
+        background-image: url("./imagenes/fondo_logo_balnco_definitivo\ -\ copia.png");
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    border: solid #004b76;   
+    border-radius: 20px;
+    background: transparent;
+    background-color: #004b76bb;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    z-index: 1;
+    text-align: center;
+    text-shadow: 1px 1px gray;
+    background-image: linear-gradient(to right, #2273a1, #2273a1, #2273a1);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom-left-radius: 44px;
+    border-bottom-right-radius: 44px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #243644;
+    width: 600px;
+    height: 220px;
+    border: 5px solid transparent;
+    border-image: url("./imagenes/mitextbox.png") 30 round repeat;
+    text-align: center;
+}
+
+.container h2 {
+    padding-bottom: 5px;
+    width: auto;
+    height: 10%;
+}
+
+.container button {
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+.container button:hover {
+    padding: 0;
+    background-color: rgba(158, 191, 211, 0.8);
+    border-radius: 5px;
+}
+
+.players {
+    justify-content: space-between;
+    width: auto;
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    background-image: linear-gradient(to right, #004b76, #004b76, #004b76);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: baseline;
+}
+
+nav {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+nav > ul {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    left: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: #004b76;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+li:hover {
+    background-color: #728c9b;
+    transform: scale(1.05);
+}
+
+li select {
+    background-color: #004b76;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-family: 'Inazuma';
+    transition: background-color 0.2s ease-in-out;
+    outline: none;
+}
+
+li:hover select {
+    background-color: #728c9b;
+    color: white;
+}
+
+li select:focus {
+    border: none;
+    outline: none;
+}
+
+li > a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+.style1 {
+    border: solid black 1px;
+}
+
+#descRaimon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-self: center;
+    width: 600px;
+    border: 5px solid transparent;
+    border-image: url('./imagenes/mitextbox.png') 30 round repeat;
+    height: auto;
+    overflow-wrap: break-word;
+    background-color: #243644;
+    color: white;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+}
+
+#info {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#info.show {
+    opacity: 1;
+    transform: translateY(0);
+}

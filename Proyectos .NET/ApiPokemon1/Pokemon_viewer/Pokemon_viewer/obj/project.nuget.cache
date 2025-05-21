@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RIFJc+8CQ1Iv6+wnF3mCbOjbhfa1sIzBQBzXZF+pvyql8+mnhwo8SABtgZ9SllzZdepLfnN1bqTWIulyoRsQDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ApiPokemon1\\Pokemon_viewer\\Pokemon_viewer\\Pokemon_viewer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fjsannicolas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

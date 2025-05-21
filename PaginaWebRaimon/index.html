@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./imagenes/logo_raimon.png" type="image/png">
+
+    <title>Raimon</title>
+</head>
+<body>
+    <div class="title"><h1>Raimon FF</h1></div>    
+    <div class="navigationbar">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Jugadores</a></li>
+                <li><a href="">Alineaciones</a></li>
+                <li>
+                    <select name="equipos" id="equipos">
+                        <option value="1">Raimon</option>                        
+                        <option value="3">Royal Academy</option>
+                        <option value="4">Zeus</option>                        
+                    </select>   
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="logo">  
+            <img src="./imagenes/logo_raimon.png" alt="logo">
+    </div>
+    <div class="content">  
+        <div class="container">
+            <h2>Jugadores</h2>
+            
+            <div class="players">
+                <button onclick="showMark()"><img id="Mark" src="./imagenes/Nueva carpeta/mark_evans.png" alt="Mark"></button>
+                <button onclick="showAxel()"><img id="Axel" src="./imagenes/Nueva carpeta/axel_blaze.png" alt="Axel"></button>
+                <button onclick="showJude()"><img id="Jude" src="./imagenes/Nueva carpeta/jude_sharp.png" alt="Jude"></button>
+                <button onclick="showKevin()"><img id="Kevin" src="./imagenes/Nueva carpeta/kevin_dragonfly.png" alt="Kevin"></button>
+                <button onclick="showNathan()"><img id="Nathan" src="./imagenes/Nueva carpeta/nathan_swift.png" alt="Nathan"></button>
+                <button onclick="showJack()"><img id="Jack" src="./imagenes/Nueva carpeta/jack_wallside.png" alt="Jack"></button>
+                <button onclick="showTod()"><img id="Tod" src="./imagenes/Nueva carpeta/tod_ironside.png" alt="Tod"></button>
+                <button onclick="showTim()"><img id="Tim" src="./imagenes/Nueva carpeta/tim.png" alt="Tim" ></button>
+                <button onclick="showJim()"><img id="Jim" src="./imagenes/Nueva carpeta/jim.png" alt="Jim" ></button>
+                <button onclick="showSam()"><img id="Sam" src="./imagenes/Nueva carpeta/sam.png" alt="Sam" ></button>
+                <button onclick="showMax()"><img id="Max" src="./imagenes/Nueva carpeta/max.png" alt="Max"></button>
+                <button onclick="showWilly()"><img id="Willy" src="./imagenes/Nueva carpeta/willy_glass.png" alt="Willy"></button>
+                <button onclick="showSteve()"><img id="Steve" src="./imagenes/Nueva carpeta/steve.png" alt="Steve" ></button>
+                <button onclick="showBobby()"><img id="Bobby" src="./imagenes/Nueva carpeta/bobby_shearer.png" alt="Bobby"></button>
+                <button onclick="showErik()"><img id="Erik" src="./imagenes/Nueva carpeta/erik_eagle.png" alt="Erik"></button>
+            </div>        
+        </div>
+        <div id="info">            
+        </div>
+        <div id="descRaimon">
+            <p>Club de futbol del Instituto Raimon</p>
+        </div>
+    </div>  
+    <div class="footer">
+        <p>2025</p>
+    </div>
+    <script>
+        document.getElementById("info").style.cssText= ""
+    function showMark (){
+        var infoJugador = "<p>Mark Evans <img src='./imagenes/iconos/PR_icon.png' alt='IconoPortero'/> <img src='./imagenes/iconos/afinidad_MONTANA.png' alt='afinidadMontana'/></p>";
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+
+        var markImg = document.getElementById("Mark");
+        var originalSrc = markImg.src;
+        markImg.src = "./imagenes/CLICK/MARK_CLICK.png";
+
+        
+        setTimeout(function() {
+            markImg.src = originalSrc;
+        }, 200);
+
+        document.getElementById("Mark").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+
+    }
+    function showAxel (){
+        var infoJugador = "<p>Axel Blaze <img src='./imagenes/iconos/DL_icon.png' alt='IconoDelantero'/> <img src='./imagenes/iconos/afinidad_FUEGO.png' alt='afinidadFuego'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show");
+
+        var axelImg = document.getElementById("Axel");
+        var originalSrc = axelImg.src;
+        axelImg.src = "./imagenes/CLICK/AXEL_CLICK.png";
+
+        
+        setTimeout(function() {
+            axelImg.src = originalSrc;
+        }, 200);
+
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showJude (){
+        var infoJugador = "<p>Jude Sharp <img src='./imagenes/iconos/MD_icon.png' alt='IconoMedio'/> <img src='./imagenes/iconos/afinidad_AIRE.png' alt='afinidadAire'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showKevin (){
+        var infoJugador = "<p>Kevin Dragonfly <img src='./imagenes/iconos/DL_icon.png' alt='IconoDelantero'/> <img src='./imagenes/iconos/afinidad_BOSQUE.png' alt='afinidadBosque'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showNathan (){
+        var infoJugador = "<p>Nathan Swift <img src='./imagenes/iconos/DF_icon.png' alt='IconoDefensa'/> <img src='./imagenes/iconos/afinidad_AIRE.png' alt='afinidadAire'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+        
+        
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showJack (){
+        var infoJugador = "<p>Jack Wallside <img src='./imagenes/iconos/DF_icon.png' alt='IconoDefensa'/> <img src='./imagenes/iconos/afinidad_MONTANA.png' alt='afinidadMontana'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+
+        var jackImg = document.getElementById("Jack");
+        var originalSrc = jackImg.src;
+        jackImg.src = "./imagenes/CLICK/JACK_CLICK.png";
+
+        
+        setTimeout(function() {
+            jackImg.src = originalSrc;
+        }, 200);
+
+        
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showTod (){
+        var infoJugador = "<p>Tod Ironside <img src='./imagenes/iconos/DF_icon.png' alt='IconoDefensa'/> <img src='./imagenes/iconos/afinidad_FUEGO.png' alt='afinidadFuego'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+        
+        var todImg = document.getElementById("Tod");
+        var originalSrc = todImg.src;
+        todImg.src = "./imagenes/CLICK/TOD_CLICK.png";
+
+        
+        setTimeout(function() {
+            todImg.src = originalSrc;
+        }, 200);
+
+
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showTim (){
+        var infoJugador = "<p>Tim Saunders <img src='./imagenes/iconos/MD_icon.png' alt='IconoMedio'/> <img src='./imagenes/iconos/afinidad_BOSQUE.png' alt='afinidadBosque'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+        
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showJim (){
+        var infoJugador = "<p>Jim Wraith <img src='./imagenes/iconos/DF_icon.png' alt='IconoDefensa'/> <img src='./imagenes/iconos/afinidad_BOSQUE.png' alt='afinidadBosque'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+        
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showSam (){
+        var infoJugador = "<p>Sam Kincaid <img src='./imagenes/iconos/MD_icon.png' alt='IconoMedio'/> <img src='./imagenes/iconos/afinidad_FUEGO.png' alt='afinidadFuego'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+        
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showMax (){
+        var infoJugador = "<p>Maxwell Carson <img src='./imagenes/iconos/DL_icon.png' alt='IconoDelantero'/> <img src='./imagenes/iconos/afinidad_AIRE.png' alt='afinidadAire'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+        
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showWilly (){
+        var infoJugador = "<p>William Glass <img src='./imagenes/iconos/DL_icon.png' alt='IconoDelantero'/> <img src='./imagenes/iconos/afinidad_BOSQUE.png' alt='afinidadBosque'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+        
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showSteve (){
+        var infoJugador = "<p>Steve Grim <img src='./imagenes/iconos/MD_icon.png' alt='IconoMedio'/> <img src='./imagenes/iconos/afinidad_AIRE.png' alt='afinidadAire'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+        
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showBobby (){
+        var infoJugador = "<p>Bobby Shearer <img src='./imagenes/iconos/DF_icon.png' alt='IconoDefensa'/> <img src='./imagenes/iconos/afinidad_BOSQUE.png' alt='afinidadBosque'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+        
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+        document.getElementById("Erik").style.cssText = ""
+    }
+    function showErik (){
+        var infoJugador = "<p>Erik Eagle <img src='./imagenes/iconos/MD_icon.png' alt='IconoMedio'/> <img src='./imagenes/iconos/afinidad_BOSQUE.png' alt='afinidadBosque'/></p>"        
+        
+        var infoDiv = document.getElementById("info");
+        infoDiv.innerHTML = infoJugador;
+        infoDiv.style.cssText = "margin-top: 10px;align-self: center;width: 600px;border: 5px solid transparent;border-image:url('./imagenes/mitextbox.png') 30 round repeat;height: auto;overflow-wrap: break-word;background-color: #243644;color: white;";
+        infoDiv.classList.add("show"); 
+        
+        document.getElementById("Mark").style.cssText = ""
+        document.getElementById("Axel").style.cssText = ""
+        document.getElementById("Jude").style.cssText = ""
+        document.getElementById("Kevin").style.cssText = ""
+        document.getElementById("Nathan").style.cssText = ""
+        document.getElementById("Jack").style.cssText = ""
+        document.getElementById("Tod").style.cssText = ""
+        document.getElementById("Tim").style.cssText = ""
+        document.getElementById("Jim").style.cssText = ""
+        document.getElementById("Sam").style.cssText = ""
+        document.getElementById("Max").style.cssText = ""
+        document.getElementById("Willy").style.cssText = ""
+        document.getElementById("Steve").style.cssText = ""
+        document.getElementById("Bobby").style.cssText = ""
+        document.getElementById("Erik").style.cssText = "background-color: rgba(158, 191, 211, 0.8);border-radius: 5px;"
+    }
+
+    let mark = document.getElementById("Mark");
+    let axel = document.getElementById("Axel");
+    let jude = document.getElementById("Jude");
+    let kevin = document.getElementById("Kevin");
+    let nathan = document.getElementById("Nathan");
+    let jack = document.getElementById("Jack");
+    let tod = document.getElementById("Tod");
+    let tim = document.getElementById("Tim");
+    let jim = document.getElementById("Jim");
+    let sam = document.getElementById("Sam");
+    let max = document.getElementById("Max");
+    let willy = document.getElementById("Willy");
+    let steve = document.getElementById("Steve");
+    let bobby = document.getElementById("Bobby");
+    let erik = document.getElementById("Erik");
+
+    let players = [mark, axel, jude, kevin, nathan, jack, tod, tim, jim, sam, max, willy, steve, bobby, erik]; 
+    
+    for (let i = 0; i < players.length; i++) {
+        players[i].style.transition = "transform 0.3s ease";
+
+        players[i].addEventListener("mouseover", function() {
+            this.style.transform = "scale(1.1)";
+        });
+        players[i].addEventListener("mouseout", function() {
+            this.style.transform = "scale(1)";
+        });        
+    }
+    let select = document.getElementById("equipos");
+    select.addEventListener("change", function() {
+        let selectedValue = select.value;
+        if (selectedValue == "1") {
+            window.location.href = "./index.html";
+        } else if (selectedValue == "3") {
+            window.location.href = "./royal.html";
+        } else if (selectedValue == "4") {
+            window.location.href = ""; //./zeus.html
+        }
+    });
+    </script>
+</body>
+</html>

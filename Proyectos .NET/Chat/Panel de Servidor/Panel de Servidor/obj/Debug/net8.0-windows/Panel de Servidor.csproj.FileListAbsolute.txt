@@ -1,0 +1,16 @@
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\bin\Debug\net8.0-windows\Panel de Servidor.exe
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\bin\Debug\net8.0-windows\Panel de Servidor.deps.json
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\bin\Debug\net8.0-windows\Panel de Servidor.runtimeconfig.json
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\bin\Debug\net8.0-windows\Panel de Servidor.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\bin\Debug\net8.0-windows\Panel de Servidor.pdb
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\Panel_de_Servidor.Form1.resources
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\Panel de Servidor.csproj.GenerateResource.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\Panel de Servidor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\Panel de Servidor.AssemblyInfoInputs.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\Panel de Servidor.AssemblyInfo.cs
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\Panel de Servidor.csproj.CoreCompileInputs.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\Panel de Servidor.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\refint\Panel de Servidor.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\Panel de Servidor.pdb
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\Panel de Servidor.genruntimeconfig.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Panel de Servidor\Panel de Servidor\obj\Debug\net8.0-windows\ref\Panel de Servidor.dll

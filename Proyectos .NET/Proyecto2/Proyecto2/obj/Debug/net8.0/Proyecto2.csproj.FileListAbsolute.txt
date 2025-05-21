@@ -1,0 +1,14 @@
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\obj\Debug\net8.0\Proyecto2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\obj\Debug\net8.0\Proyecto2.AssemblyInfoInputs.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\obj\Debug\net8.0\Proyecto2.AssemblyInfo.cs
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\obj\Debug\net8.0\Proyecto2.csproj.CoreCompileInputs.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\bin\Debug\net8.0\Proyecto2.exe
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\bin\Debug\net8.0\Proyecto2.deps.json
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\bin\Debug\net8.0\Proyecto2.runtimeconfig.json
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\bin\Debug\net8.0\Proyecto2.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\bin\Debug\net8.0\Proyecto2.pdb
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\obj\Debug\net8.0\Proyecto2.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\obj\Debug\net8.0\refint\Proyecto2.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\obj\Debug\net8.0\Proyecto2.pdb
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\obj\Debug\net8.0\Proyecto2.genruntimeconfig.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Proyecto2\Proyecto2\obj\Debug\net8.0\ref\Proyecto2.dll

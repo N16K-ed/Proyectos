@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HdAdR0eeTy2Y7FhQJBfJz4i1d9fNXhyQAhSVKVAA2F2doBClhyZQiNBkb3xBj2iitX6J1mbEU+l7gcH3CgCppg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ApiPokemon1\\ApiPokemon1\\ApiPokemon1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fjsannicolas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

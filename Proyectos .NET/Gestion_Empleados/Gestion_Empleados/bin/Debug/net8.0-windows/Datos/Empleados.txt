@@ -1,0 +1,15 @@
+***********
+Nombre: sdgdfgfd
+Apellido 1: dg
+Apellido 2: sdf2
+Salario: 9999,99
+Cargo: CARGO3
+Email: asdsaf@fsdf.xdc
+***********
+***********
+Nombre: FRAN
+Apellido 1: adffaf
+Apellido 2: 
+Salario: 12312,23
+Cargo: JEFE
+Email: dfsfs

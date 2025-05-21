@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Proyecto1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{061F9B4A-A16D-451C-B33E-E0C74531264B}|Proyecto1\\Proyecto1.csproj|c:\\users\\fjsannicolas\\desktop\\proyecto htmlcss\\proyectos .net\\proyecto1\\proyecto1\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{061F9B4A-A16D-451C-B33E-E0C74531264B}|Proyecto1\\Proyecto1.csproj|solutionrelative:proyecto1\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Calculadora.cs",
+              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Proyecto1\\Proyecto1\\Calculadora.cs",
+              "RelativeDocumentMoniker": "Proyecto1\\Calculadora.cs",
+              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Proyecto1\\Proyecto1\\Calculadora.cs",
+              "RelativeToolTip": "Proyecto1\\Calculadora.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T09:16:03.297Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

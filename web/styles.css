@@ -1,0 +1,97 @@
+body{
+    background-image: url(./imagenes/fondo_logo_balnco_definitivo.png);
+}
+
+@font-face {
+    font-family: 'Raimon';
+    src: url();
+}
+.header{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;  
+    background-color: rgb(51, 116, 190) ;
+    width: auto; 
+    border-bottom-left-radius: 44px;   
+    border-bottom-right-radius: 44px;
+}
+.logo{
+    position: absolute;
+    margin: 15.724px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;    
+}
+span{
+    color: beige;
+    width: fit-content;  
+    margin: auto;
+    font-size: xx-large;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;    
+}
+.nav-content{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: beige;
+    padding: 10px 10px;
+    background-color: rgb(37, 83, 136);
+    border-radius: 20px;
+}
+.nav-content:hover{
+    background-color: rgb(51, 116, 190);
+}
+.main{
+    position: absolute; 
+    left:0;
+    right: 0;   
+    margin: 150px auto;
+    background-color: rgba(0, 0, 0, 0.055);
+    border-radius: 44px;
+    width: 100%;
+    padding: 20px;
+}
+.container{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 600px;
+    border-radius: 44px;
+}
+.player{
+    display: flex;
+    height: 60px;
+    width: 100px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.player > img{
+    width: 60px;
+    height: 60px;
+}
+
+.player-info{
+    display: flex;
+    flex-direction: column;
+}
+.player-info > img[alt="af"]{
+    width: 26px;
+    height: 26px;
+    margin-bottom: 5px;
+    margin-top: 12px;
+}
+.player-info > img[alt="pos"]{
+    width: 28px;
+    height: 16px;
+}

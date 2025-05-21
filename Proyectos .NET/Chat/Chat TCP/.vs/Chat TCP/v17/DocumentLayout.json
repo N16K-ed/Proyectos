@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Chat\\Chat TCP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADB66425-A65E-40A0-80A3-441190BC7D99}|Chat TCP\\Chat TCP.csproj|c:\\users\\fjsannicolas\\desktop\\proyecto htmlcss\\proyectos .net\\chat\\chat tcp\\chat tcp\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADB66425-A65E-40A0-80A3-441190BC7D99}|Chat TCP\\Chat TCP.csproj|solutionrelative:chat tcp\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 188,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Chat\\Chat TCP\\Chat TCP\\Server.cs",
+              "RelativeDocumentMoniker": "Chat TCP\\Server.cs",
+              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Chat\\Chat TCP\\Chat TCP\\Server.cs",
+              "RelativeToolTip": "Chat TCP\\Server.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T09:18:10.233Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|c:\\users\\fjsannicolas\\desktop\\proyecto htmlcss\\proyectos .net\\proyectopok\u00E9mon\\proyectopok\u00E9mon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|solutionrelative:proyectopok\u00E9mon\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|c:\\users\\fjsannicolas\\desktop\\proyecto htmlcss\\proyectos .net\\proyectopok\u00E9mon\\proyectopok\u00E9mon\\bulbasaur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|solutionrelative:proyectopok\u00E9mon\\bulbasaur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|c:\\users\\fjsannicolas\\desktop\\proyecto htmlcss\\proyectos .net\\proyectopok\u00E9mon\\proyectopok\u00E9mon\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|solutionrelative:proyectopok\u00E9mon\\pokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|c:\\users\\fjsannicolas\\desktop\\proyecto htmlcss\\proyectos .net\\proyectopok\u00E9mon\\proyectopok\u00E9mon\\charmander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|solutionrelative:proyectopok\u00E9mon\\charmander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|c:\\users\\fjsannicolas\\desktop\\proyecto htmlcss\\proyectos .net\\proyectopok\u00E9mon\\proyectopok\u00E9mon\\ataque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|solutionrelative:proyectopok\u00E9mon\\ataque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|c:\\users\\fjsannicolas\\desktop\\proyecto htmlcss\\proyectos .net\\proyectopok\u00E9mon\\proyectopok\u00E9mon\\tipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E8CBF77-8410-4BB5-B204-DFC53884EC3B}|ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon.csproj|solutionrelative:proyectopok\u00E9mon\\tipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 235,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Charmander.cs",
+              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Charmander.cs",
+              "RelativeDocumentMoniker": "ProyectoPok\u00E9mon\\Charmander.cs",
+              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Charmander.cs",
+              "RelativeToolTip": "ProyectoPok\u00E9mon\\Charmander.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T10:30:43.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tipos.cs",
+              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Tipos.cs",
+              "RelativeDocumentMoniker": "ProyectoPok\u00E9mon\\Tipos.cs",
+              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Tipos.cs",
+              "RelativeToolTip": "ProyectoPok\u00E9mon\\Tipos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T11:05:34.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ataque.cs",
+              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Ataque.cs",
+              "RelativeDocumentMoniker": "ProyectoPok\u00E9mon\\Ataque.cs",
+              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Ataque.cs",
+              "RelativeToolTip": "ProyectoPok\u00E9mon\\Ataque.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T10:30:47.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoPok\u00E9mon\\Program.cs",
+              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Program.cs",
+              "RelativeToolTip": "ProyectoPok\u00E9mon\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T10:16:54.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bulbasaur.cs",
+              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Bulbasaur.cs",
+              "RelativeDocumentMoniker": "ProyectoPok\u00E9mon\\Bulbasaur.cs",
+              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Bulbasaur.cs",
+              "RelativeToolTip": "ProyectoPok\u00E9mon\\Bulbasaur.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T10:16:41.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pokemon.cs",
+              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Pokemon.cs",
+              "RelativeDocumentMoniker": "ProyectoPok\u00E9mon\\Pokemon.cs",
+              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\ProyectoPok\u00E9mon\\ProyectoPok\u00E9mon\\Pokemon.cs",
+              "RelativeToolTip": "ProyectoPok\u00E9mon\\Pokemon.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAqwHYAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T06:20:30.179Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

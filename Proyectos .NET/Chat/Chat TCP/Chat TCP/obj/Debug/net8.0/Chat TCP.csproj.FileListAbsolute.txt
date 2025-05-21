@@ -1,0 +1,14 @@
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\bin\Debug\net8.0\Chat TCP.exe
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\bin\Debug\net8.0\Chat TCP.deps.json
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\bin\Debug\net8.0\Chat TCP.runtimeconfig.json
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\bin\Debug\net8.0\Chat TCP.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\bin\Debug\net8.0\Chat TCP.pdb
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\obj\Debug\net8.0\Chat TCP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\obj\Debug\net8.0\Chat TCP.AssemblyInfoInputs.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\obj\Debug\net8.0\Chat TCP.AssemblyInfo.cs
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\obj\Debug\net8.0\Chat TCP.csproj.CoreCompileInputs.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\obj\Debug\net8.0\Chat TCP.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\obj\Debug\net8.0\refint\Chat TCP.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\obj\Debug\net8.0\Chat TCP.pdb
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\obj\Debug\net8.0\Chat TCP.genruntimeconfig.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\Chat TCP\Chat TCP\obj\Debug\net8.0\ref\Chat TCP.dll

@@ -1,0 +1,16 @@
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\bin\Debug\net8.0-windows\VentanaCliente.exe
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\bin\Debug\net8.0-windows\VentanaCliente.deps.json
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\bin\Debug\net8.0-windows\VentanaCliente.runtimeconfig.json
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\bin\Debug\net8.0-windows\VentanaCliente.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\bin\Debug\net8.0-windows\VentanaCliente.pdb
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\VentanaCliente.csproj.GenerateResource.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\VentanaCliente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\VentanaCliente.AssemblyInfoInputs.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\VentanaCliente.AssemblyInfo.cs
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\VentanaCliente.csproj.CoreCompileInputs.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\VentanaCliente.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\refint\VentanaCliente.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\VentanaCliente.pdb
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\VentanaCliente.genruntimeconfig.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\ref\VentanaCliente.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Chat\VentanaCliente\VentanaCliente\obj\Debug\net8.0-windows\VentanaCliente.BotonRedondeado.resources

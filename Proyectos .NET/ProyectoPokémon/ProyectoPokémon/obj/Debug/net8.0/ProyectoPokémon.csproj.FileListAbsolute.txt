@@ -1,0 +1,14 @@
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\bin\Debug\net8.0\ProyectoPokémon.exe
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\bin\Debug\net8.0\ProyectoPokémon.deps.json
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\bin\Debug\net8.0\ProyectoPokémon.runtimeconfig.json
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\bin\Debug\net8.0\ProyectoPokémon.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\bin\Debug\net8.0\ProyectoPokémon.pdb
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\obj\Debug\net8.0\ProyectoPokémon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\obj\Debug\net8.0\ProyectoPokémon.AssemblyInfoInputs.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\obj\Debug\net8.0\ProyectoPokémon.AssemblyInfo.cs
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\obj\Debug\net8.0\ProyectoPokémon.csproj.CoreCompileInputs.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\obj\Debug\net8.0\ProyectoPokémon.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\obj\Debug\net8.0\refint\ProyectoPokémon.dll
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\obj\Debug\net8.0\ProyectoPokémon.pdb
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\obj\Debug\net8.0\ProyectoPokémon.genruntimeconfig.cache
+C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\ProyectoPokémon\ProyectoPokémon\obj\Debug\net8.0\ref\ProyectoPokémon.dll
