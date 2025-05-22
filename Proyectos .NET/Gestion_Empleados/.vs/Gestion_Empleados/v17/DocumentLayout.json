@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|c:\\users\\fjsannicolas\\desktop\\prac_trac\\proyectos\\proyectos .net\\gestion_empleados\\gestion_empleados\\detallesreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|solutionrelative:gestion_empleados\\detallesreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|c:\\users\\fjsannicolas\\desktop\\prac_trac\\proyectos\\proyectos .net\\gestion_empleados\\gestion_empleados\\verreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|solutionrelative:gestion_empleados\\verreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|c:\\users\\fjsannicolas\\desktop\\prac_trac\\proyectos\\proyectos .net\\gestion_empleados\\gestion_empleados\\formdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|solutionrelative:gestion_empleados\\formdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|c:\\users\\fjsannicolas\\desktop\\prac_trac\\proyectos\\proyectos .net\\gestion_empleados\\gestion_empleados\\formdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|solutionrelative:gestion_empleados\\formdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|c:\\users\\fjsannicolas\\desktop\\prac_trac\\proyectos\\proyectos .net\\gestion_empleados\\gestion_empleados\\verreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|solutionrelative:gestion_empleados\\verreportes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|c:\\users\\fjsannicolas\\desktop\\prac_trac\\proyectos\\proyectos .net\\gestion_empleados\\gestion_empleados\\verreportes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|solutionrelative:gestion_empleados\\verreportes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|c:\\users\\fjsannicolas\\desktop\\prac_trac\\proyectos\\proyectos .net\\gestion_empleados\\gestion_empleados\\detallesreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3D548C11-6CD0-48F7-A180-6D9DF03FC977}|Gestion_Empleados\\Gestion_Empleados.csproj|solutionrelative:gestion_empleados\\detallesreporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,67 +22,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 188,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VerReportes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\VerReportes.cs",
-              "RelativeDocumentMoniker": "Gestion_Empleados\\VerReportes.cs",
-              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\VerReportes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Gestion_Empleados\\VerReportes.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "DetallesReporte.cs",
+              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\DetallesReporte.cs",
+              "RelativeDocumentMoniker": "Gestion_Empleados\\DetallesReporte.cs",
+              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\DetallesReporte.cs",
+              "RelativeToolTip": "Gestion_Empleados\\DetallesReporte.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowBYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T08:00:14.377Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VerReportes.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\VerReportes.Designer.cs",
-              "RelativeDocumentMoniker": "Gestion_Empleados\\VerReportes.Designer.cs",
-              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\VerReportes.Designer.cs",
-              "RelativeToolTip": "Gestion_Empleados\\VerReportes.Designer.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAlwDYAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:59:37.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormDashboard.cs",
-              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\FormDashboard.cs",
-              "RelativeDocumentMoniker": "Gestion_Empleados\\FormDashboard.cs",
-              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\FormDashboard.cs",
-              "RelativeToolTip": "Gestion_Empleados\\FormDashboard.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:55:50.589Z",
+              "WhenOpened": "2025-05-22T08:12:20.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormDashboard.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\FormDashboard.cs",
-              "RelativeDocumentMoniker": "Gestion_Empleados\\FormDashboard.cs",
-              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\FormDashboard.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Gestion_Empleados\\FormDashboard.cs [Dise\u00F1o]",
+              "Title": "DetallesReporte.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\DetallesReporte.cs",
+              "RelativeDocumentMoniker": "Gestion_Empleados\\DetallesReporte.cs",
+              "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\DetallesReporte.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Gestion_Empleados\\DetallesReporte.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:55:47.143Z",
+              "WhenOpened": "2025-05-22T08:06:13.101Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "VerReportes.cs",
               "DocumentMoniker": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\VerReportes.cs",
               "RelativeDocumentMoniker": "Gestion_Empleados\\VerReportes.cs",
               "ToolTip": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\VerReportes.cs",
               "RelativeToolTip": "Gestion_Empleados\\VerReportes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABOAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwGcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T07:50:54.403Z",
               "EditorCaption": ""

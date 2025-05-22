@@ -88,17 +88,20 @@ namespace Gestion_Empleados
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem is Reporte reporteSeleccionado)
+            if (comboBox1.SelectedValue != null && int.TryParse(comboBox1.SelectedValue.ToString(), out int idReporte))
             {
-                // Aquí deberías abrir el formulario para mostrar detalle del reporte
-                // Por ahora dejamos vacío
-                MessageBox.Show($"Aquí abrirías el reporte con ID {reporteSeleccionado.Id} y asunto '{reporteSeleccionado.Asunto}'");
+                DetallesReporte detallesReporte = new DetallesReporte(idReporte)
+                {
+                    Visible = true
+                };
+                this.Visible = false;
             }
             else
             {
-                MessageBox.Show("Por favor, selecciona un reporte del combo.");
+                MessageBox.Show("Por favor, selecciona un ID válido.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
