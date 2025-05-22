@@ -50,3 +50,5 @@ C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Emplead
 C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_.0A4B8970.Up2Date
 C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.VerReportes.resources
 C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.DetallesReporte.resources
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\itextsharp.dll

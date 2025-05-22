@@ -41,6 +41,7 @@
             label3 = new Label();
             comboBox2 = new ComboBox();
             button5 = new Button();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -159,11 +160,25 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
+            // button6
+            // 
+            button6.BackColor = Color.RosyBrown;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.Location = new Point(125, 221);
+            button6.Name = "button6";
+            button6.Size = new Size(205, 49);
+            button6.TabIndex = 12;
+            button6.Text = "CERRAR SESIÓN";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
             // FormDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(comboBox2);
             Controls.Add(label3);
@@ -197,5 +212,6 @@
         private Label label3;
         private ComboBox comboBox2;
         private Button button5;
+        private Button button6;
     }
 }

@@ -90,5 +90,14 @@ namespace Gestion_Empleados
             };
             Visible = false;
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FormLogin formLogin = new()
+            {
+                Visible = true
+            };
+            Visible = false;
+        }
     }
 }

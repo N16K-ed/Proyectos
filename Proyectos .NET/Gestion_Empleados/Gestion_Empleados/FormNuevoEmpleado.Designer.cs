@@ -44,6 +44,7 @@
             comboBox1 = new ComboBox();
             button2 = new Button();
             numericUpDown1 = new NumericUpDown();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
@@ -116,7 +117,7 @@
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Location = new Point(539, 72);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(89, 92);
+            pictureBox1.Size = new Size(150, 150);
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
@@ -187,11 +188,22 @@
             numericUpDown1.Size = new Size(112, 23);
             numericUpDown1.TabIndex = 16;
             // 
+            // button3
+            // 
+            button3.Location = new Point(539, 239);
+            button3.Name = "button3";
+            button3.Size = new Size(150, 42);
+            button3.TabIndex = 17;
+            button3.Text = "Añadir Foto de Perfil";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // FormNuevoEmpleado
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
             Controls.Add(numericUpDown1);
             Controls.Add(button2);
             Controls.Add(comboBox1);
@@ -234,5 +246,6 @@
         private ComboBox comboBox1;
         private Button button2;
         private NumericUpDown numericUpDown1;
+        private Button button3;
     }
 }

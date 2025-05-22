@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Gestion_Empleados
@@ -17,6 +18,9 @@ namespace Gestion_Empleados
             InitializeComponent();
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
             this.Load += new EventHandler(FormEmpleados_Load);
+
+            dataGridView1.SelectionChanged += DataGridView_SelectionChanged;
+            dataGridView2.SelectionChanged += DataGridView_SelectionChanged;
         }
 
         private void FormEmpleados_Load(object sender, EventArgs e)
@@ -28,7 +32,7 @@ namespace Gestion_Empleados
         {
             empleados.Clear();
 
-            string query = "SELECT Id, Nombre, Apellido1, Apellido2, Salario, Cargo, Email FROM Empleados";
+            string query = "SELECT Id, Nombre, Apellido1, Apellido2, Salario, Cargo, Email, FotoPerfil FROM Empleados";
 
             try
             {
@@ -48,7 +52,8 @@ namespace Gestion_Empleados
                                 Apellido2 = reader.GetString(3),
                                 Salario = reader.GetDecimal(4),
                                 Cargo = reader.GetString(5),
-                                Email = reader.GetString(6)
+                                Email = reader.GetString(6),
+                                FotoPerfil = reader.IsDBNull(7) ? null : (byte[])reader[7]
                             });
                         }
                     }
@@ -65,6 +70,7 @@ namespace Gestion_Empleados
 
                 buscar.Clear();
                 dataGridView2.DataSource = null;
+                pictureBox1.Image = null;
             }
             catch (Exception ex)
             {
@@ -72,6 +78,65 @@ namespace Gestion_Empleados
             }
         }
 
+        private void DataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            DataGridView dgv = sender as DataGridView;
+            if (dgv?.CurrentRow?.DataBoundItem is Empleado empleado)
+            {
+                MostrarFotoEnPictureBox(empleado);
+            }
+            else
+            {
+                pictureBox1.Image = null;
+            }
+        }
+
+        private void MostrarFotoEnPictureBox(Empleado empleado)
+        {
+            if (empleado?.FotoPerfil != null)
+            {
+                using (var ms = new MemoryStream(empleado.FotoPerfil))
+                {
+                    using (var imgOriginal = Image.FromStream(ms))
+                    {
+                        Image imgRedimensionada = ResizeImage(imgOriginal, pictureBox1.Width, pictureBox1.Height);
+                        pictureBox1.Image = imgRedimensionada;
+                        pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;  // Ajusta la imagen a todo el PictureBox
+                    }
+                }
+            }
+            else
+            {
+                pictureBox1.Image = null;
+            }
+        }
+
+        private Image ResizeImage(Image image, int width, int height)
+        {
+            var destRect = new Rectangle(0, 0, width, height);
+            var destImage = new Bitmap(width, height);
+
+            destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+            using (var graphics = Graphics.FromImage(destImage))
+            {
+                graphics.Clear(pictureBox1.BackColor); // fondo igual que el PictureBox
+
+                graphics.CompositingMode = System.Drawing.Drawing2D.CompositingMode.SourceOver;
+                graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                graphics.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+
+                using (var wrapMode = new System.Drawing.Imaging.ImageAttributes())
+                {
+                    wrapMode.SetWrapMode(System.Drawing.Drawing2D.WrapMode.TileFlipXY);
+                    graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
+                }
+            }
+
+            return destImage;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -102,12 +167,12 @@ namespace Gestion_Empleados
 
             dataGridView2.DataSource = null;
             dataGridView2.DataSource = buscar;
+
             if (dataGridView2.Columns["Id"] != null)
             {
                 dataGridView2.Columns["Id"].Visible = false;
             }
         }
-
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -187,6 +252,7 @@ namespace Gestion_Empleados
             comboBox1.SelectedItem = null;
             numericUpDown1.Value = 0;
         }
+
         public class Empleado
         {
             public int Id { get; set; }
@@ -196,6 +262,7 @@ namespace Gestion_Empleados
             public decimal Salario { get; set; }
             public string Cargo { get; set; }
             public string Email { get; set; }
+            public byte[] FotoPerfil { get; set; }  // Aquí la foto en binario
         }
     }
 }
