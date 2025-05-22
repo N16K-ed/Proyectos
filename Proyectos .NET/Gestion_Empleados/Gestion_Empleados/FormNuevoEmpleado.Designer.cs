@@ -170,9 +170,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(259, 362);
+            button2.Location = new Point(259, 356);
             button2.Name = "button2";
-            button2.Size = new Size(237, 22);
+            button2.Size = new Size(237, 42);
             button2.TabIndex = 15;
             button2.Text = "Volver al Dashboard";
             button2.UseVisualStyleBackColor = true;
@@ -209,7 +209,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FormNuevoEmpleado";
-            Text = "Form1";
+            Text = "Nuevo Empleado";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);

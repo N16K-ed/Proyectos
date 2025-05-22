@@ -109,7 +109,6 @@
             checkBox1.TabIndex = 8;
             checkBox1.Text = "Urgente";
             checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // FormReportes
             // 
@@ -125,7 +124,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FormReportes";
-            Text = "FormReportes";
+            Text = "Nuevo Reporte";
             ResumeLayout(false);
             PerformLayout();
         }

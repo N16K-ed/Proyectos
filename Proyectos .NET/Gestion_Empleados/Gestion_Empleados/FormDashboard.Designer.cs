@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDashboard));
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
@@ -39,6 +40,7 @@
             pictureBox1 = new PictureBox();
             label3 = new Label();
             comboBox2 = new ComboBox();
+            button5 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -91,7 +93,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(511, 178);
+            button2.Location = new Point(511, 221);
             button2.Name = "button2";
             button2.Size = new Size(124, 28);
             button2.TabIndex = 5;
@@ -121,6 +123,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(123, 313);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(555, 95);
@@ -146,11 +149,22 @@
             comboBox2.Size = new Size(108, 23);
             comboBox2.TabIndex = 10;
             // 
+            // button5
+            // 
+            button5.Location = new Point(511, 177);
+            button5.Name = "button5";
+            button5.Size = new Size(124, 28);
+            button5.TabIndex = 11;
+            button5.Text = "Ver Reportes";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // FormDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button5);
             Controls.Add(comboBox2);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
@@ -163,7 +177,7 @@
             Controls.Add(textBox1);
             Controls.Add(label1);
             Name = "FormDashboard";
-            Text = "Form1";
+            Text = "Dashboard";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -182,5 +196,6 @@
         private PictureBox pictureBox1;
         private Label label3;
         private ComboBox comboBox2;
+        private Button button5;
     }
 }

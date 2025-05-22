@@ -18,3 +18,34 @@ C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Gestion_Empleados\
 C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.pdb
 C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.genruntimeconfig.cache
 C:\Users\fjsannicolas\Desktop\Proyecto HTMLCSS\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\ref\Gestion_Empleados.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\Gestion_Empleados.exe
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\Gestion_Empleados.deps.json
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\Gestion_Empleados.runtimeconfig.json
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\Gestion_Empleados.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\Gestion_Empleados.pdb
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.FormDashboard.resources
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.FormEmpleados.resources
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.FormLogin.resources
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.FormNuevoEmpleado.resources
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.FormReportes.resources
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.csproj.GenerateResource.cache
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.AssemblyInfoInputs.cache
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.AssemblyInfo.cs
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.csproj.CoreCompileInputs.cache
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.sourcelink.json
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\refint\Gestion_Empleados.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.pdb
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.genruntimeconfig.cache
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\ref\Gestion_Empleados.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.csproj.AssemblyReference.cache
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.Properties.Resources.resources
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_.0A4B8970.Up2Date
+C:\Users\fjsannicolas\Desktop\Prac_Trac\Proyectos\Proyectos .NET\Gestion_Empleados\Gestion_Empleados\obj\Debug\net8.0-windows\Gestion_Empleados.VerReportes.resources

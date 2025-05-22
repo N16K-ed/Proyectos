@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,24 +22,30 @@ namespace Gestion_Empleados
         }
         private void FormDashboard_Load(object sender, EventArgs e)
         {
-            string filePath = Path.Combine(Application.StartupPath, "Datos", "Empleados.txt");
+            string connectionString = "Server=PMPW1364\\SQLEXPRESS;Database=bdGestionEmpleados;Trusted_Connection=True;";
             int contadorEmpleados = 0;
 
-            using (StreamReader reader = new StreamReader(filePath))
+            try
             {
-                string linea;
-                while ((linea = reader.ReadLine()) != null)
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    linea = linea.Trim();
-                    if (linea.StartsWith("********"))
+                    connection.Open();
+                    string query = "SELECT COUNT(*) FROM Empleados";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        contadorEmpleados++;
+                        contadorEmpleados = (int)command.ExecuteScalar();
                     }
                 }
-            }
 
-            textBox1.Text = contadorEmpleados.ToString();
+                textBox1.Text = contadorEmpleados.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al contar empleados: " + ex.Message);
+            }
         }
+
 
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -69,6 +76,15 @@ namespace Gestion_Empleados
         private void button2_Click(object sender, EventArgs e)
         {
             FormReportes formReportes = new()
+            {
+                Visible = true
+            };
+            Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            VerReportes verReportes = new()
             {
                 Visible = true
             };

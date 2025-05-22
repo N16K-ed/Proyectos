@@ -6,6 +6,7 @@ namespace Gestion_Empleados
         {
             InitializeComponent();
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
+            this.AcceptButton = button1;
         }
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {

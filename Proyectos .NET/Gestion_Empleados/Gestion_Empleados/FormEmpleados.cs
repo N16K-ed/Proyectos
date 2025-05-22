@@ -1,23 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Gestion_Empleados
 {
-
     public partial class FormEmpleados : Form
     {
-        List<Empleado> empleados = new List<Empleado>();
-        List<Empleado> buscar = new List<Empleado>();
+        private string connectionString = "Server=PMPW1364\\SQLEXPRESS;Database=bdGestionEmpleados;Trusted_Connection=True;";
+        private List<Empleado> empleados = new List<Empleado>();
+        private List<Empleado> buscar = new List<Empleado>();
+
         public FormEmpleados()
         {
-
             InitializeComponent();
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
             this.Load += new EventHandler(FormEmpleados_Load);
@@ -25,111 +21,79 @@ namespace Gestion_Empleados
 
         private void FormEmpleados_Load(object sender, EventArgs e)
         {
-            string filePath = Path.Combine(Application.StartupPath, "Datos", "Empleados.txt");
-            dataGridView2.DataSource = buscar;
+            CargarEmpleados();
+        }
+
+        private void CargarEmpleados()
+        {
+            empleados.Clear();
+
+            string query = "SELECT Id, Nombre, Apellido1, Apellido2, Salario, Cargo, Email FROM Empleados";
+
             try
             {
-                using (StreamReader reader = new StreamReader(filePath))
+                using (SqlConnection con = new SqlConnection(connectionString))
+                using (SqlCommand cmd = new SqlCommand(query, con))
                 {
-                    string linea;
-                    Empleado empleadoActual = null;
-
-                    while ((linea = reader.ReadLine()) != null)
+                    con.Open();
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        linea = linea.Trim();
-                        if (linea.StartsWith("********"))
+                        while (reader.Read())
                         {
-                            if (empleadoActual != null)
+                            empleados.Add(new Empleado
                             {
-                                empleados.Add(empleadoActual);
-                                empleadoActual = null;
-                            }
-                            continue;
+                                Id = reader.GetInt32(0),
+                                Nombre = reader.GetString(1),
+                                Apellido1 = reader.GetString(2),
+                                Apellido2 = reader.GetString(3),
+                                Salario = reader.GetDecimal(4),
+                                Cargo = reader.GetString(5),
+                                Email = reader.GetString(6)
+                            });
                         }
-                        string[] partes = linea.Split(new char[] { ':' }, StringSplitOptions.RemoveEmptyEntries);
-                        if (partes.Length == 2)
-                        {
-                            string campo = partes[0].Trim();
-                            string valor = partes[1].Trim();
-                            if (empleadoActual == null)
-                            {
-                                empleadoActual = new Empleado();
-                            }
-                            switch (campo)
-                            {
-                                case "Nombre":
-                                    empleadoActual.Nombre = valor;
-                                    break;
-                                case "Apellido 1":
-                                    empleadoActual.Apellido1 = valor;
-                                    break;
-                                case "Apellido 2":
-                                    empleadoActual.Apellido2 = valor;
-                                    break;
-                                case "Salario":
-                                    if (decimal.TryParse(valor, out decimal salario))
-                                    {
-                                        empleadoActual.Salario = salario;
-                                    }
-                                    break;
-                                case "Cargo":
-                                    empleadoActual.Cargo = valor;
-                                    break;
-                                case "Email":
-                                    empleadoActual.Email = valor;
-                                    break;
-                            }
-                        }
-                    }
-                    if (empleadoActual != null)
-                    {
-                        empleados.Add(empleadoActual);
                     }
                 }
+
+                dataGridView1.DataSource = null;
                 dataGridView1.DataSource = empleados;
+
+                // Ocultar la columna Id para que no sea visible
+                if (dataGridView1.Columns["Id"] != null)
+                {
+                    dataGridView1.Columns["Id"].Visible = false;
+                }
+
+                buscar.Clear();
+                dataGridView2.DataSource = null;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error al leer el archivo: {ex.Message}");
+                MessageBox.Show("Error al cargar empleados: " + ex.Message);
             }
+        }
 
-        }
-        private void Form_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                Application.Exit();
-            }
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            buscar.Clear();
-
             string nombre = textBox1.Text.Trim();
-            string cargo = comboBox1.SelectedItem?.ToString();
+            string apellido1 = textBox2.Text.Trim();
+            string apellido2 = textBox3.Text.Trim();
+            string cargo = comboBox1.SelectedItem?.ToString() ?? "";
             decimal salario = numericUpDown1.Value;
 
-            bool buscarPorNombre = !string.IsNullOrWhiteSpace(nombre) && !nombre.Equals("Nombre", StringComparison.OrdinalIgnoreCase);
-            bool buscarPorCargo = !string.IsNullOrWhiteSpace(cargo);
-            bool buscarPorSalario = salario > 0;
+            bool filtrarNombre = !string.IsNullOrWhiteSpace(nombre);
+            bool filtrarApellido1 = !string.IsNullOrWhiteSpace(apellido1);
+            bool filtrarApellido2 = !string.IsNullOrWhiteSpace(apellido2);
+            bool filtrarCargo = !string.IsNullOrWhiteSpace(cargo);
+            bool filtrarSalario = salario > 0;
 
-            foreach (Empleado emp in empleados)
-            {
-                bool coincide = true;
-
-                if (buscarPorNombre && !emp.Nombre.Equals(nombre, StringComparison.OrdinalIgnoreCase))
-                    coincide = false;
-
-                if (buscarPorCargo && !emp.Cargo.Equals(cargo, StringComparison.OrdinalIgnoreCase))
-                    coincide = false;
-
-                if (buscarPorSalario && emp.Salario != salario)
-                    coincide = false;
-
-                if (coincide)
-                    buscar.Add(emp);
-            }
+            buscar = empleados.FindAll(emp =>
+                (!filtrarNombre || emp.Nombre.IndexOf(nombre, StringComparison.OrdinalIgnoreCase) >= 0) &&
+                (!filtrarApellido1 || emp.Apellido1.Equals(apellido1, StringComparison.OrdinalIgnoreCase)) &&
+                (!filtrarApellido2 || emp.Apellido2.Equals(apellido2, StringComparison.OrdinalIgnoreCase)) &&
+                (!filtrarCargo || emp.Cargo.Equals(cargo, StringComparison.OrdinalIgnoreCase)) &&
+                (!filtrarSalario || emp.Salario >= salario)
+            );
 
             if (buscar.Count == 0)
             {
@@ -138,24 +102,12 @@ namespace Gestion_Empleados
 
             dataGridView2.DataSource = null;
             dataGridView2.DataSource = buscar;
-        }
-
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            FormDashboard formDashboard = new()
+            if (dataGridView2.Columns["Id"] != null)
             {
-                Visible = true
-            };
-            Visible = false;           
+                dataGridView2.Columns["Id"].Visible = false;
+            }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            textBox1.Text = "Nombre";
-            comboBox1.SelectedItem = null;
-            numericUpDown1.Value = 0;
-        }
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -168,79 +120,37 @@ namespace Gestion_Empleados
             if (buscar.Count == 1)
             {
                 Empleado empleadoUnico = buscar[0];
-
                 DialogResult result = MessageBox.Show(
                     $"¿Estás seguro de que quieres eliminar al empleado {empleadoUnico.Nombre} {empleadoUnico.Apellido1} {empleadoUnico.Apellido2}?",
                     "Confirmación de Eliminación",
                     MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question
-                );
+                    MessageBoxIcon.Question);
 
                 if (result == DialogResult.Yes)
                 {
                     try
                     {
-                        string filePath = Path.Combine(Application.StartupPath, "Datos", "Empleados.txt");
-                        if (File.Exists(filePath))
+                        using (SqlConnection con = new SqlConnection(connectionString))
+                        using (SqlCommand cmd = new SqlCommand("DELETE FROM Empleados WHERE Id = @Id", con))
                         {
-                            string[] lines = File.ReadAllLines(filePath);
-                            List<string> updatedLines = new List<string>();
-                            bool isEmpleadoBlock = false;
-                            bool eliminarBloque = false;
+                            cmd.Parameters.AddWithValue("@Id", empleadoUnico.Id);
+                            con.Open();
+                            int rowsAffected = cmd.ExecuteNonQuery();
 
-                            foreach (string line in lines)
+                            if (rowsAffected > 0)
                             {
-                                string trimmedLine = line.Trim();
-
-                                if (trimmedLine.StartsWith("***********"))
-                                {
-                                    if (isEmpleadoBlock && eliminarBloque)
-                                    {
-                                        isEmpleadoBlock = false;
-                                        eliminarBloque = false;
-                                        continue;
-                                    }
-                                    isEmpleadoBlock = true;
-                                    eliminarBloque = false;
-                                    continue;
-                                }
-
-                                if (isEmpleadoBlock)
-                                {
-                                    if (trimmedLine.StartsWith("Nombre:") && trimmedLine.Contains(empleadoUnico.Nombre)) eliminarBloque = true;
-                                    if (trimmedLine.StartsWith("Apellido 1:") && trimmedLine.Contains(empleadoUnico.Apellido1)) eliminarBloque = true;
-                                    if (trimmedLine.StartsWith("Apellido 2:") && trimmedLine.Contains(empleadoUnico.Apellido2)) eliminarBloque = true;
-                                    if (trimmedLine.StartsWith("Salario:") && trimmedLine.Contains(empleadoUnico.Salario.ToString("F2"))) eliminarBloque = true;
-                                    if (trimmedLine.StartsWith("Cargo:") && trimmedLine.Contains(empleadoUnico.Cargo)) eliminarBloque = true;
-                                    if (trimmedLine.StartsWith("Email:") && trimmedLine.Contains(empleadoUnico.Email)) eliminarBloque = true;
-
-                                    if (eliminarBloque)
-                                    {
-                                       continue;
-                                    }
-                                }
-
-                                updatedLines.Add(line);
+                                MessageBox.Show("Empleado eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                CargarEmpleados(); // Refresca la lista después de eliminar
                             }
-
-                            File.WriteAllLines(filePath, updatedLines);
-
-                            MessageBox.Show($"El empleado {empleadoUnico.Nombre} ha sido eliminado del sistema.", "Eliminación Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            FormEmpleados newForm = new()
+                            else
                             {
-                                Visible = true
-                            };
-                            Visible = false;
-                        }
-                        else
-                        {
-                            MessageBox.Show("El archivo de empleados no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("No se pudo eliminar el empleado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show($"Error al eliminar el empleado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error al eliminar el empleado: " + ex.Message);
                     }
                 }
                 else
@@ -254,5 +164,38 @@ namespace Gestion_Empleados
             }
         }
 
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormDashboard formDashboard = new()
+            {
+                Visible = true
+            };
+            Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "Nombre";
+            comboBox1.SelectedItem = null;
+            numericUpDown1.Value = 0;
+        }
+        public class Empleado
+        {
+            public int Id { get; set; }
+            public string Nombre { get; set; }
+            public string Apellido1 { get; set; }
+            public string Apellido2 { get; set; }
+            public decimal Salario { get; set; }
+            public string Cargo { get; set; }
+            public string Email { get; set; }
+        }
     }
 }

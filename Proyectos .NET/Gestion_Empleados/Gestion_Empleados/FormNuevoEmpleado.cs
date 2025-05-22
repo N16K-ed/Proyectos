@@ -1,24 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Gestion_Empleados
 {
     public partial class FormNuevoEmpleado : Form
     {
-        private string filePath = Path.Combine(Application.StartupPath, "Datos", "Empleados.txt");
         public FormNuevoEmpleado()
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
             this.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
+
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
@@ -38,50 +34,78 @@ namespace Gestion_Empleados
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox5.Text))
+            // Validar campos obligatorios
+            if (string.IsNullOrWhiteSpace(textBox1.Text) ||
+                string.IsNullOrWhiteSpace(textBox2.Text) ||
+                string.IsNullOrWhiteSpace(textBox5.Text))
             {
-                MessageBox.Show("Hay campos vacíos.");
+                MessageBox.Show("Hay campos vacíos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
-            {                
-                if (decimal.TryParse(numericUpDown1.Text, out decimal resultado))
+
+            // Validar salario (aunque NumericUpDown ya limita esto)
+            decimal salario = numericUpDown1.Value;
+            if (salario <= 0)
+            {
+                MessageBox.Show("El salario debe ser mayor a cero.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                string connectionString = "Server=PMPW1364\\SQLEXPRESS;Database=bdGestionEmpleados;Trusted_Connection=True;";
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    try
+                    connection.Open();
+
+                    string query = @"INSERT INTO Empleados 
+                             (Nombre, Apellido1, Apellido2, Cargo, Email, Salario) 
+                             VALUES 
+                             (@Nombre, @Apellido1, @Apellido2, @Cargo, @Email, @Salario)";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        string directoryPath = Path.Combine(Application.StartupPath, "Datos");
-                        if (!Directory.Exists(directoryPath))
+                        command.Parameters.AddWithValue("@Nombre", textBox1.Text.Trim());
+                        command.Parameters.AddWithValue("@Apellido1", textBox2.Text.Trim());
+                        command.Parameters.AddWithValue("@Apellido2", textBox3.Text.Trim());
+                        command.Parameters.AddWithValue("@Cargo", comboBox1.SelectedItem?.ToString() ?? "");
+                        command.Parameters.AddWithValue("@Email", textBox5.Text.Trim());
+                        command.Parameters.AddWithValue("@Salario", salario);
+
+                        int filasAfectadas = command.ExecuteNonQuery();
+                        if (filasAfectadas > 0)
                         {
-                            Directory.CreateDirectory(directoryPath);
+                            MessageBox.Show("Usuario creado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
-
-                        using (StreamWriter writer = new StreamWriter(filePath, true))
+                        else
                         {
-                            writer.Write("***********\nNombre: " +textBox1.Text +
-                                "\nApellido 1: " + textBox2.Text + "\nApellido 2: " + textBox3.Text + 
-                                "\nSalario: " + numericUpDown1.Value + "\nCargo: " + comboBox1.SelectedItem.ToString() + 
-                                "\nEmail: " + textBox5.Text + "\n");
+                            MessageBox.Show("No se insertó ningún registro.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
-
-                        FormDashboard formDashboard = new()
-                        {
-                            Visible = true
-                        };
-                        Visible = false;
-
-                        MessageBox.Show("Usuario creado con éxito.");
-
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Error al cargar el archivo: {ex.Message}");
-                    }
+                }
+
+                FormDashboard formDashboard = new()
+                {
+                    Visible = true
+                };
+                Visible = false;
+            }
+            catch (SqlException ex)
+            {
+                if (ex.Number == 2627) // Violación de restricción UNIQUE
+                {
+                    MessageBox.Show("Ya existe un empleado con esos apellidos. No se puede duplicar.", "Error de duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
-                    MessageBox.Show("El salario no es válido.");
+                    MessageBox.Show($"Error de SQL: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error inesperado: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\Gestion_Empleados.csproj": {}
+    "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\Gestion_Empleados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\Gestion_Empleados.csproj": {
+    "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\Gestion_Empleados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\Gestion_Empleados.csproj",
+        "projectUniqueName": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\Gestion_Empleados.csproj",
         "projectName": "Gestion_Empleados",
-        "projectPath": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\Gestion_Empleados.csproj",
+        "projectPath": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\Gestion_Empleados.csproj",
         "packagesPath": "C:\\Users\\fjsannicolas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\obj\\",
+        "outputPath": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fjsannicolas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

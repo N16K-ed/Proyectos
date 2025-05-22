@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "UhltVJhE1I6Qu4caoUlt9+DVjRG8jM8jDr4KfRgW7vkFtoBv7cdsFJ5ilm63DxK8cihxrXkKxg5xBl+B5ZKD4w==",
+  "dgSpecHash": "vGPwACWS3lBATesGyvvaNJaWtYYjzqhIHca0VbItlPXUIs6UhAOtp/RqiXcZqqNttkY/abHO805r+g/SDm/l1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fjsannicolas\\Desktop\\Proyecto HTMLCSS\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\Gestion_Empleados.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\fjsannicolas\\Desktop\\Prac_Trac\\Proyectos\\Proyectos .NET\\Gestion_Empleados\\Gestion_Empleados\\Gestion_Empleados.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fjsannicolas\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\fjsannicolas\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\fjsannicolas\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\fjsannicolas\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\fjsannicolas\\.nuget\\packages\\system.data.sqlclient\\4.9.0\\system.data.sqlclient.4.9.0.nupkg.sha512"
+  ],
   "logs": []
 }
